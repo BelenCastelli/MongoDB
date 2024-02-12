@@ -3,7 +3,7 @@ let User = require('./user');
 let Profile = require('./profile');
 let Credentials = require('./credential');
 
-mongoose.connect ('mongodb+srv://belenCastelli:bs2ts7J8fjCRgUvh@codenotch.iowjrko.mongodb.net/codenotch',
+mongoose.connect ('mongodb+srv://belenCastelli:@codenotch.iowjrko.mongodb.net/codenotch',
                     {useNewUrlParser: false, useUnifiedTopology:false});
 
 let userDocument = new User (
