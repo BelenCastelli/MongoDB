@@ -23,5 +23,5 @@ userSchema.post('save', function(doc) {
     console.log('%s han sido guardados', doc._id);
   });
 
-module.exports = mongoose.model('User', userSchema, 'app');
+module.exports = mongoose.model('User', userSchema, 'user');
 

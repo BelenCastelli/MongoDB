@@ -46,4 +46,4 @@ profileSchema.post('save', function(doc) {
     console.log('%s han sido guardados', doc._id);
   });
 
-module.exports = mongoose.model('Profile', profileSchema, 'app'); 
+module.exports = mongoose.model('Profile', profileSchema, 'profile'); 

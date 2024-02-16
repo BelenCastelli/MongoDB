@@ -48,4 +48,4 @@ credentialsSchema.pre('save', function(next) {
 credentialsSchema.post('save', function(doc) {
     console.log('%s han sido guardados', doc._id);
   });
-module.exports =  mongoose.model('Credentials', credentialsSchema, 'app');
+module.exports =  mongoose.model('Credentials', credentialsSchema, 'credential');
