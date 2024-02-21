@@ -5,16 +5,16 @@ const teachersSchema = new mongoose.Schema(
         firstName: {
             type: String,
             lowercase: true,
-            require: true
+            required: true
         }, 
         lastName: {
             type: String,
             lowercase: true,
-            require: true
+            required: true
         },
         groups: {
             type:[String],
-            require: true
+            required: true
         }
     }
 )

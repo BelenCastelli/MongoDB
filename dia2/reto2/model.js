@@ -5,8 +5,7 @@ let Subjects = require('./subjects');
 let Marks = require('./marks');
 let Students = require ('./students');
 
-mongoose.connect('mongodb+srv://belenCastelli:bs2ts7J8fjCRgUvh@codenotch.iowjrko.mongodb.net/Academy',
-                {useNewUrlParser: false, useUnifiedTopology:false});
+
 
 let teacher = {
     firstName: 'Estefania',
@@ -66,6 +65,8 @@ let student2 = {
     marks: [mark3, mark4]
 }
 
+mongoose.connect('mongodb+srv://belenCastelli:bs2ts7J8fjCRgUvh@codenotch.iowjrko.mongodb.net/Academy',
+                {useNewUrlParser: false, useUnifiedTopology:false});
 // Teachers.insertMany([teacher, teacher2])
 //     .then(function() {
 //         console.log('Documentos guardados correctamente');

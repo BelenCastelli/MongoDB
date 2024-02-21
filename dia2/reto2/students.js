@@ -6,12 +6,12 @@ const studentsSchema = new mongoose.Schema(
         firstName: {
             type: String,
             lowercase: true,
-            require: true
+            required: true
         }, 
         lastName: {
             type: String,
             lowercase: true,
-            require: true
+            required: true
         }, 
         marks: [Marks.schema] 
     }

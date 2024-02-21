@@ -1,7 +1,7 @@
 let mongoose = require('mongoose')
 let Photos = require('./user')
 
-mongoose.connect('mongodb+srv://belenCastelli:bs2ts7J8fjCRgUvh@codenotch.iowjrko.mongodb.net/codenotch',
+mongoose.connect('mongodb+srv://belenCastelli:bs2ts7J8fjCRgUvh@codenotch.iowjrko.mongodb.net/Photos',
                 {useNewUrlParser: false, useUnifiedTopology:false});
 
 let photoDocument = new Photos(
@@ -43,10 +43,10 @@ Photos.create(data)
         console.log('Error al escribir documento');
     })
 
-// Photos.insertMany([data, data2])
-//     .then(function(){
-//         console.log('Documentos guardados correctamente');
-//         mongoose.disconnect();
-//     })
-//     .catch(error => console.log(error))
+Photos.insertMany([data, data2])
+    .then(function(){
+        console.log('Documentos guardados correctamente');
+        mongoose.disconnect();
+    })
+    .catch(error => console.log(error))
 
