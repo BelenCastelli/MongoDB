@@ -93,7 +93,7 @@ function deletePhoto(req, res){
     })
     .catch(error => {
         console.log(`Error al eliminar ${error}`);
-        respuesta = {error: true, codigo: 500, mensaje:'Error en la validación de los datos modificados'};
+        respuesta = {error: true, codigo: 500, mensaje:'Error al eliminar los datos'};
         res.json(respuesta);
     })
  
